@@ -1,0 +1,21 @@
+{
+    "name": "wit",
+    "version": "1.0.0",
+    "description": "tools for goodcity",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint $(git ls-files '*.js')",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "goodcity",
+        "tools",
+        "component"
+    ],
+    "author": "gqysmart",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^3.19.0",
+        "eslint-config-goodcity": "^1.0.0"
+    }
+}
