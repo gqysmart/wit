@@ -1,26 +1,39 @@
 {
-    "name": "wit",
-    "version": "1.0.0",
-    "description": "tools for goodcity",
-    "main": "index.js",
-    "scripts": {
-        "lint": "eslint $(git ls-files '*.js')",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/gqysmart/wit.git"
-    },
-    "keywords": [
-        "goodcity",
-        "tools",
-        "component"
-    ],
-    "author": "gqysmart",
-    "license": "ISC",
-    "devDependencies": {
-        "eslint": "^3.19.0",
-        "eslint-config-goodcity": "^1.0.0",
-        "eslint-plugin-import": "^2.3.0"
-    }
+  "name": "wit",
+  "version": "1.0.0",
+  "description": "tools for goodcity",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint $(git ls-files '*.js')",
+    "test": "mocha --recursive --timeout 5500 tests/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gqysmart/wit.git"
+  },
+  "keywords": [
+    "goodcity",
+    "tools",
+    "component"
+  ],
+  "author": "gqysmart",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-goodcity": "^1.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "mocha": "^3.4.2",
+    "temp": "^0.8.3"
+  },
+  "dependencies": {
+    "async": "^2.4.1",
+    "debug": "^2.6.8",
+    "level": "^1.7.0",
+    "level-sublevel": "^6.6.1",
+    "socket.io": "^2.0.2",
+    "socket.io-client": "^2.0.2",
+    "uuid": "^3.0.1",
+    "werelogs": "github:scality/werelogs",
+    "winston": "^2.3.1"
+  }
 }
